@@ -39,6 +39,9 @@ object HealthConstants {
     const val SPEED = "SPEED"
     const val ACTIVITY_INTENSITY = "ACTIVITY_INTENSITY"
     const val SKIN_TEMPERATURE = "SKIN_TEMPERATURE"
+    const val ELEVATION_GAINED = "ELEVATION_GAINED"
+    const val POWER = "POWER"
+    const val VO2_MAX = "VO2_MAX"
 
     // Meal types
     const val BREAKFAST = "BREAKFAST"
@@ -108,6 +111,9 @@ object HealthConstants {
         SPEED to SpeedRecord::class,
         ACTIVITY_INTENSITY to ActivityIntensityRecord::class,
         SKIN_TEMPERATURE to SkinTemperatureRecord::class,
+        ELEVATION_GAINED to ElevationGainedRecord::class,
+        POWER to PowerRecord::class,
+        VO2_MAX to Vo2MaxRecord::class,
     )
     
     /**
@@ -131,6 +137,8 @@ object HealthConstants {
         TOTAL_CALORIES_BURNED to TotalCaloriesBurnedRecord.ENERGY_TOTAL,
         ACTIVITY_INTENSITY to ActivityIntensityRecord.INTENSITY_MINUTES_TOTAL,
         SKIN_TEMPERATURE to SkinTemperatureRecord.TEMPERATURE_DELTA_AVG,
+        ELEVATION_GAINED to ElevationGainedRecord.ELEVATION_GAINED_TOTAL,
+        VO2_MAX to Vo2MaxRecord.VO2_MAX_AVG,
     )
 
     /**

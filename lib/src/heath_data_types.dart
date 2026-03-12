@@ -118,6 +118,9 @@ enum HealthDataType {
   TOTAL_CALORIES_BURNED,
   ACTIVITY_INTENSITY,
   SKIN_TEMPERATURE,
+  ELEVATION_GAINED,
+  POWER,
+  VO2_MAX,
 }
 
 /// Access types for Health Data.
@@ -268,6 +271,9 @@ const List<HealthDataType> dataTypeKeysAndroid = [
   HealthDataType.MENSTRUATION_FLOW,
   HealthDataType.ACTIVITY_INTENSITY,
   HealthDataType.SKIN_TEMPERATURE,
+  HealthDataType.ELEVATION_GAINED,
+  HealthDataType.POWER,
+  HealthDataType.VO2_MAX,
 ];
 
 /// Maps a [HealthDataType] to a [HealthDataUnit].
@@ -393,6 +399,9 @@ const Map<HealthDataType, HealthDataUnit> dataTypeToUnit = {
   HealthDataType.TOTAL_CALORIES_BURNED: HealthDataUnit.KILOCALORIE,
   HealthDataType.ACTIVITY_INTENSITY: HealthDataUnit.MINUTE,
   HealthDataType.SKIN_TEMPERATURE: HealthDataUnit.DEGREE_CELSIUS,
+  HealthDataType.ELEVATION_GAINED: HealthDataUnit.METER,
+  HealthDataType.POWER: HealthDataUnit.WATT,
+  HealthDataType.VO2_MAX: HealthDataUnit.MILLILITER_PER_KILOGRAM_PER_MINUTE,
 };
 
 // const PlatformTypeJsonValue = {
@@ -480,6 +489,8 @@ enum HealthDataUnit {
   MILLIGRAM_PER_DECILITER,
   MILLIMOLES_PER_LITER,
   METER_PER_SECOND,
+  WATT,
+  MILLILITER_PER_KILOGRAM_PER_MINUTE,
   UNKNOWN_UNIT,
   NO_UNIT,
 }
