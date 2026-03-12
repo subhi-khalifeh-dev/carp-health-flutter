@@ -138,7 +138,6 @@ object HealthConstants {
         ACTIVITY_INTENSITY to ActivityIntensityRecord.INTENSITY_MINUTES_TOTAL,
         SKIN_TEMPERATURE to SkinTemperatureRecord.TEMPERATURE_DELTA_AVG,
         ELEVATION_GAINED to ElevationGainedRecord.ELEVATION_GAINED_TOTAL,
-        VO2_MAX to Vo2MaxRecord.VO2_MAX_AVG,
     )
 
     /**
