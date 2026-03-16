@@ -116,6 +116,14 @@ class HealthDataConverter {
             is SpeedRecord -> record.samples.map { sample ->
                 createInstantRecord(metadata, sample.time, sample.speed.inMetersPerSecond)
             }
+
+            is ElevationGainedRecord -> listOf(createIntervalRecord(metadata, record.startTime, record.endTime, record.elevation.inMeters))
+
+            is PowerRecord -> record.samples.map { sample ->
+                createInstantRecord(metadata, sample.time, sample.power.inWatts)
+            }
+
+            is Vo2MaxRecord -> listOf(createInstantRecord(metadata, record.time, record.vo2MillilitersPerMinuteKilogram))
             
             is SleepSessionRecord -> listOf(
                 createIntervalRecord(
