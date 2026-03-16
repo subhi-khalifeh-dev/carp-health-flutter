@@ -179,6 +179,9 @@ class HealthDataChanges(
         is MenstruationFlowRecord -> listOf(HealthConstants.MENSTRUATION_FLOW)
         is SpeedRecord -> listOf(HealthConstants.SPEED)
         is ActivityIntensityRecord -> listOf(HealthConstants.ACTIVITY_INTENSITY)
+        is ElevationGainedRecord -> listOf(HealthConstants.ELEVATION_GAINED)
+        is PowerRecord -> listOf(HealthConstants.POWER)
+        is Vo2MaxRecord -> listOf(HealthConstants.VO2MAX)
         else -> emptyList()
     }
 

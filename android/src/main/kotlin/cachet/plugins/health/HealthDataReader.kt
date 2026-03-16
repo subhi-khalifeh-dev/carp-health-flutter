@@ -233,7 +233,8 @@ class HealthDataReader(
                             }
                         }
                         else -> {
-                            healthPoint = dataConverter.convertRecord(matchingRecord, dataType)[0]
+                            val converted = dataConverter.convertRecord(matchingRecord, dataType)
+                            healthPoint = if (converted.isNotEmpty()) converted[0] else mapOf()
                         }
                     }
 
